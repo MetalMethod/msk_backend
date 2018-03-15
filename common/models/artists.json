@@ -1,0 +1,45 @@
+{
+  "name": "artists",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "name": {
+      "type": "string",
+      "required": true
+    },
+    "genre": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "link": {
+      "type": "string"
+    },
+    "album": {
+      "type": "string"
+    },
+    "user": {
+      "type": "string",
+      "required": true
+    },
+    "dateAdded": {
+      "type": "date",
+      "required": true
+    },
+    "songs": {
+      "type": "object"
+    }
+  },
+  "validations": [],
+  "relations": {},
+  "acls": [],
+  "methods": {}
+}
